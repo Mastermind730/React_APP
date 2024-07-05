@@ -56,7 +56,7 @@ const SecondPage: React.FC = () => {
           </div>
         </div>
         <h1 className="text-center font-semibold text-3xl my-2">
-          Department and their SubDepartments
+          Department and  SubDepartments
         </h1>
         <DepartmentList />
       </div>
