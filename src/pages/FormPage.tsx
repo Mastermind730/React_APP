@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { Button, TextField, Container, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const FormPage: React.FC = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
     if (name && phone && email) {
       localStorage.setItem('userDetails', JSON.stringify({ name, phone, email }));
-      window.location.href = '/dataPage';
+      navigate('/dataPage');
     } else {
       alert('Please fill in all fields');
     }

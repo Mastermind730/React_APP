@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import axios from "axios";
 import DepartmentList from "../components/DepartmentList";
+import { useNavigate } from "react-router-dom";
 
 interface Post {
   userId: number;
@@ -13,11 +14,11 @@ interface Post {
 const SecondPage: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-
+  const navigate=useNavigate();
   useEffect(() => {
     const userDetails = localStorage.getItem("userDetails");
     if (!userDetails) {
-      window.location.href = "/";
+      navigate("/");
       return;
     }
 
