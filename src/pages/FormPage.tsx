@@ -9,7 +9,7 @@ const FormPage: React.FC = () => {
   const handleSubmit = () => {
     if (name && phone && email) {
       localStorage.setItem('userDetails', JSON.stringify({ name, phone, email }));
-      window.location.href = '/data_page';
+      window.location.href = '/dataPage';
     } else {
       alert('Please fill in all fields');
     }
