@@ -33,12 +33,14 @@ const SecondPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 py-8">
+      <h1 className='text-center text-4xl font-semibold my-4'>Data Representation from a Dummy API</h1>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-lg">
           <div className="h-96">
             <DataGrid rows={posts} columns={columns} autoPageSize />
           </div>
         </div>
+        <h1 className='text-center font-semibold text-3xl my-2'>Department and there SubDepartments</h1>
         <DepartmentList />
       </div>
     </div>

@@ -17,7 +17,7 @@ const FormPage: React.FC = () => {
 
   return (
     <div className="flex items-center justify-center  bg-gray-100">
-      <Container  className="bg-white p-8 rounded-lg shadow-lg">
+      <Container  className="bg-white p-8 items-center justify-center rounded-lg shadow-lg">
         <Typography variant="h4" className="mb-6 text-center font-semibold text-gray-700">
           User Details
         </Typography>
