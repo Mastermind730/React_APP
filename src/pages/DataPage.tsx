@@ -32,7 +32,7 @@ const SecondPage: React.FC = () => {
         console.error("Error fetching posts:", error);
         setLoading(false);
       });
-  }, []);
+  }, [navigate]);
 
   const columns: GridColDef[] = [
     { field: "id", headerName: "ID", width: 70 },
