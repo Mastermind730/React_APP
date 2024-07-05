@@ -1,17 +1,17 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import FormPage from './components/FormPage';
-import SecondPage from './components/DataPage';
+import React from "react";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import FormPage from "./pages/FormPage";
+import SecondPage from "./pages/DataPage";
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<FormPage />} />
         <Route path="/data_page" element={<SecondPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 
