@@ -8,7 +8,7 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/" element={<FormPage />} />
-        <Route path="/second-page" element={<SecondPage />} />
+        <Route path="/data_page" element={<SecondPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
